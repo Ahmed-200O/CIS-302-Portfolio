@@ -1,0 +1,29 @@
+body {
+	font-family: verdana;
+}
+
+.container {
+	background-color: powderblue;
+	border: 1px solid gold;
+}
+
+input {
+	font-family: verdana;
+}
+
+span {
+	color: green;
+	background-color: violet;
+}
+
+form {
+	color: gold;
+	background-color: white;
+}
+
+.tipPersent {
+	color: orange;
+	background-color: indigo;
+}
+
+.

@@ -1,66 +1,109 @@
 body {
-    background-color:green;
+    background: rgb(102, 178, 255);
+    background-image: url("bgimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  main {
+    max-width: 610px;
     margin: auto;
-}
-
-#main {
-    border: 1px solid black;
-    display: flex;
-    width: 600px;
-    height: 300px;
-    background-color: lightgreen;
-    position: absolute;
-    left: 625px;
-    top: 250px;
-}
-
-.box {
-    justify-content: space-evenly;
-}
-
-
-h1 {
-    color:black;
+  }
+  
+  h1, h5 {
     text-align: center;
-}
-
-#list {
-    background-color: lightgreen;
-    width: 300px;
-    height: 200px;
-    margin: 20px;
-    border: 1px solid black;
-}
-
-a {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-a:hover{
+    color: #D5CEA3;
+  }
+  
+  .win {
     color: white;
-    background-color: #1c87c9;
-    border-radius: 50px;
-}
-
-li {
-    text-decoration: none;
-}
-
-
-
-img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-    margin: 10px;
-    border: 3px solid green;
-    background-color: lightgreen;
-}
-
-figcaption {
-    color: black;
-    font-size: 2em;
+    background-color: green;
+  }
+  
+  .loss {
+    color: white;
+    background-color: red;
+  }
+  
+  #word {
+    letter-spacing: 10px;
     text-align: center;
+    font-size: 24pt;
+    color: #D5CEA3;;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+  
+  #guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: #D5CEA3;;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+  
+  .guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #D5CEA3;;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+      #guesses {
+      text-align: center;
+      font-size: 24pt;
+      color: #D5CEA3;;
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace
+    }
+  
+    .guess {
+      padding: 30px;
+      display: inline-block;
+      border: 2px solid #D5CEA3;;
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  #guessBox {
+      height: 60px;
+      border-radius: 10px;
+      padding-top: 5px;
+      font-size: 18pt;
+      width: 200px;
+      padding-left: 10px;
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #666;
+    background-color: #D5CEA3;;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {
+    background-color: #282A3A;
+    color: white;
 }
+  
+  .button:active {
+    background-color: #D5CEA3;;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
